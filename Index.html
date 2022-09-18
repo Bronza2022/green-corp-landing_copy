@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Солнечные батареи GreenCorp</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> <!-- шапка сайта и одновременно Flex-контейнер, для которого применяем  стиль display: flex-->
+        <img class="header__logo" src="img/logo.svg">
+        <div class="header__controls">
+            <a href="#contacts">Контакты</a>
+            <button>Заказать</button>
+        </div>
+    </header>
+    <section class="about">
+        <div class="about__info">
+           <h1>Солнечные панели GreenRobotic</h1>
+           <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
+           <button>Узнать подробнее</button>
+        </div>
+        <div class="about__images">
+          <img class="about__sun-image" src="img/sun.png">
+          <img class="about__image" src="img/solar-panel.png">
+        </div>
+    </section>
+    <section class="form">
+        <div class="form__container">
+            <h1>Оставьте свои контакты</h1><br>                            <!--Проектное задание 4.1 (далее 4.1)-->
+            <p>Поможем подобрать модель.<br>                                                     <!--4.1 -->
+                Выбрать удобный вариант доставки и установки.<br>                                <!--4.1 -->
+                Гарантия возврата денег.</p>                                                       <!--4.1 -->
+                <form>                                                                             <!--4.1 -->
+                    <div class="form__group">                                                      <!--4.1 -->
+                        <label for="name">Ваше имя</label>                                          <!--4.1 -->
+                        <input type="text" placeholder="Введите имя" id="name">                     <!--4.2 -->
+                    </div>
+                    <div class="form__group">                                                        <!--4.1 -->
+                        <label for="name">Электронный адрес</label>                                   <!--4.1 -->
+                        <input type="text" placeholder="***@yandex.ru" id="email">                       <!--4.2 -->
+                    </div>
+                    <div class="form__group">
+                        <label for="name">Номер телефона</label>                                         <!--4.1 -->
+                        <input type="text" placeholder="7(999) 999-99-99" id="phone">                <!--4.2 -->
+                    </div>
+                    <div class="form__group">                                                         <!--4.1 -->
+                        <label for="name">Выберите вариант></label>                                     <!--4.1 -->
+                        <select id="budget" for="name">Примерный бюджет>                                <!--4.2 -->
+                            <option value="10-30">10 000₽ – 30 000₽</option>                           <!--4.2 -->
+                            <option value="30-60">30 000₽ – 60 000₽</option>                            <!--4.2 -->
+                            <option value="60-100">60 000₽ – 100 000₽</option>                           <!--4.2 -->
+                            <option value="100">100 000₽</option>
+                        </select>
+                    </div>
+                        <button class="form__submit" type="submit">Отправить заявку</button>                   <!--4.2 -->
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+    </html>

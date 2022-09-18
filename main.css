@@ -1,0 +1,131 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #213053;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header__logo {
+    height: 30px;
+}
+a {
+    text-decoration: none;
+    color: #213053;
+}
+header a {
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 25px;
+}
+.about {                                      /*Проектное задание 2.1*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 115px;
+    padding-top: 115px;
+    background: url('img/back.png') no-repeat;        /*Проектное задание 2.2*/
+    background-position: center;                    /*Проектное задание 2.2*/
+    background-size: cover;                        /*Проектное задание 2.2*/
+}
+.about__info {                                 /*Проектное задание 2.2*/
+    max-width: 550px;
+}
+.about h1 {                                 /*Проектное задание 2.2*/
+    font-size: 70px;
+    line-height: 76px;
+}
+.about p {                                 /*Проектное задание 2.2*/
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 0.8;
+}
+button {
+    font-family: 'Raleway', sans—serif;
+    font-size: 15px;
+    color: #fff;
+    background-color: #23a030;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
+    padding: 15px;
+}
+.about button {                                        /*Проектное задание 2.2*/
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 20px 25px;
+    margin-top: 20px;
+}
+.about__image {
+    width: 500px;
+}
+.about__sun-image {
+    width: 100px;
+    height: 100px;
+}
+.form__container {
+    width: 550px;
+}
+.form h1 {
+    font-size:48px;                            /*Проектное задание 4.3*/
+} 
+.form p {                                          /*Проектное задание 4.3*/
+    font-size: 18px;
+    opacity: 0.65;
+}
+.form {                                              /*Проектное задание 4.3*/
+    background-color: #1d263a;
+    color: #fff;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    text-align: center;
+    display: flex;                              /*Проектное задание 4.4*/
+    justify-content: center;                   /*Проектное задание 4.4*/
+    align-items: center;                      /*Проектное задание 4.4*/
+}
+.form__group {                                     /*Проектное задание 4.5*/
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    }
+   .form form {
+    display: grid;
+    margin-top: 60px; 
+    gap: 20px;
+   }
+   .form label {                                     /*Проектное задание 4.7*/
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+   }
+   .form input {                                    /*Проектное задание 4.8*/
+    font-size: 18px;
+    color: #213053;
+    height: 60px;
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+    border: none;
+   }
+   .form select {                                  /*Проектное задание 4.8*/
+    font-size: 18px;
+    color: #213053;
+    height: 60px;
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+    border: none;
+   }
+   .form__submit {                                  /*Проектное задание 4.9*/
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 60px; 
+   }
+   select {                                       /*Проектное задание 4.9*/
+    appearance: none;
+   }
+   input {                                        /*Проектное задание 4.9*/
+    outline: none;
+   }
