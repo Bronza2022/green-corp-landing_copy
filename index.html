@@ -8,16 +8,16 @@
 <body>
     <header> <!-- шапка сайта и одновременно Flex-контейнер, для которого применяем  стиль display: flex-->
         <img class="header__logo" src="img/logo.svg">
-        <div class="header__controls">
+        <div class="header__controls">                   
             <a href="#contacts">Контакты</a>
-            <button>Заказать</button>
+            <button>Заказать</button>                
         </div>
     </header>
     <section class="about">
         <div class="about__info">
            <h1>Солнечные панели GreenRobotic</h1>
            <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-           <button>Узнать подробнее</button>
+           <button>Узнать подробнее</button> 
         </div>
         <div class="about__images">
           <img class="about__sun-image" src="img/sun.png">
@@ -48,14 +48,43 @@
                         <select id="budget" for="name">Примерный бюджет>                                <!--4.2 -->
                             <option value="10-30">10 000₽ – 30 000₽</option>                           <!--4.2 -->
                             <option value="30-60">30 000₽ – 60 000₽</option>                            <!--4.2 -->
-                            <option value="60-100">60 000₽ – 100 000₽</option>                           <!--4.2 -->
+                            <option value="60-100">60 000₽ – 100 000₽</option>                   <!--4.2 -->
                             <option value="100">100 000₽</option>
                         </select>
                     </div>
-                        <button class="form__submit" type="submit">Отправить заявку</button>                   <!--4.2 -->
+                        <button class="form__submit" type="submit">Отправить заявку</button>            <!--4.2 -->
                     </div>
                 </form>
             </div>
         </section>
+        <footer>                                                                 <!--4.11 -->
+            <div class="footer__container">
+                <div class="footer__group">                               <!--4.12-4.13 -->
+                <h3>Позвонить нам:</h3>
+                <div class="footer__links">
+                    <a href="#">+7 (495) 999-99-99</a>
+                </div>
+                </div>
+                
+                <div class="footer__group">                                   <!--4.12-4.13 -->
+                <h3>Решения для дома:</h3>
+                <div class="footer__links">
+                <a href="#">Солнечные панели GreenRobotic</a>
+                <a href="#">Системы солнечных панелей GreenStation</a>
+            </div>
+            </div>
+
+            <div class="footer__group">                                    <!--4.12-4.13 -->      
+                <h3>Компания</h3>
+                <div class="footer__links">
+                <a href="#">Контакты</a>
+                <a href="#">Вакансии</a>
+                <a href="#">СМИ</a>
+                </div>
+            </div>
+            </div>
+            <div class="footer__copyright">GreenCorp © 2021</div>              <!--4.11 -->
+            
+        </footer>
     </body>
     </html>
