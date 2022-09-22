@@ -85,85 +85,76 @@ button {
     text-align: center;
     display: flex;                              /*Проектное задание 4.4*/
     justify-content: center;                   /*Проектное задание 4.4*/
-    align-items: center;                      /*Проектное задание 4.4*/
+    /* align-items: center;                      Проектное задание 4.4 */
 }
 .form__group {                                     /*Проектное задание 4.5*/
     display: flex;
     flex-direction: column;
     text-align: left;
     }
-   .form form {
+.form form {                                   /*Проектное задание 4.6*/
     display: grid;
     margin-top: 60px; 
-    gap: 20px;
+    grid-gap: 20px;
    }
-   .form label {                                     /*Проектное задание 4.7*/
+.form label {                                     /*Проектное задание 4.7 В решении проектного задания ошибка: margin-bottom: 15px; */
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
    }
-   .form input {                                    /*Проектное задание 4.8*/
+ .form input, .form select {                                    /*Проектное задание 4.8*/
     font-size: 18px;
     color: #213053;
     height: 60px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
     border-radius: 15px;
     border: none;
    }
-   .form select {                                  /*Проектное задание 4.8*/
-    font-size: 18px;
-    color: #213053;
-    height: 60px;
-    padding: 0 20px 0 20px;
-    border-radius: 15px;
-    border: none;
-   }
-   .form__submit {                                  /*Проектное задание 4.9*/
+.form__submit {                                  /*Проектное задание 4.9*/
     font-size: 18px;
     font-weight: 600;
-    margin-top: 60px; 
+    margin-top: 40px; 
    }
-   select {                                       /*Проектное задание 4.9*/
+select {                                       /*Проектное задание 4.9*/
     appearance: none;
    }
-   input {                                        /*Проектное задание 4.9*/
+input {                                        /*Проектное задание 4.9*/
     outline: none;
    }
-   button:hover {                                                 /*Проектное задание 4.10*/
+button:hover {                                                 /*Проектное задание 4.10*/
     background-color: #f6980c;
     box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+    transition: background-color 0.3s ease-in;
    }
-   button {                                                  /*Проектное задание 4.10*/
-    transition: background-color 0.3s;
-    transition-timing-function: ease-in;
-  }
-  footer {                                                      /*Проектное задание 4.12*/
-    padding: 90px 20px 90px 20px;
+footer {                                                      /*Проектное задание 4.12*/
+    padding: 90px 20px;
     font-size: 16px;
     font-weight: 600;
   }
-  .footer__container {                                    /*Проектное задание 4.12*/
+.footer__container {                                    /*Проектное задание 4.12*/
     display: flex;
     justify-content: center;
   }
-  .footer__copyright {                                       /*Проектное задание 4.12*/
+.footer__copy {                                       /*Проектное задание 4.12 В решении проектного задания ошибка: .footer__copy {*/
     margin-top: 40px;
     text-align: center;
     opacity: 0.5;
   }
-  .footer__group {                                              /*Проектное задание 4.14*/
+.footer__group {                                              /*Проектное задание 4.14*/
     margin-right: 80px;
     
   }
-  h3 {                                                          /*Проектное задание 4.14*/
+footer h3 {                                                          /*Проектное задание 4.14*/
     font-size: 16px;
     opacity: 0.7;
     margin-bottom: 30px;
   }
-  .footer__links {                                      /*Проектное задание 4.14*/
+.footer__links {                                      /*Проектное задание 4.14*/
     display: flex;
     flex-direction: column;
   }
-  a {                                           /*Проектное задание 4.14*/
+footer__links a {                                           /*Проектное задание 4.14*/
     margin-bottom: 15px;
   }
+
+                              
