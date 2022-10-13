@@ -13,7 +13,7 @@ header {
     top: 0;                                             /*Проектное задание 5.3*/
     z-index: 1;                                            /*Проектное задание 5.4*/
 }
-/* Версия для ПК*/
+
 .header__logo {                               /* Раздел "Добавляем стили шапке сайта"*/
     height: 30px;
 } 
@@ -37,21 +37,23 @@ header a {
     background: url('img/back.png') no-repeat;       /* Проектное задание 2.2 */
     background-position: center;                   /* Проектное задание 2.2*/
     background-size: cover;                       /* Проектное задание 2.2*/
-}
+   }
 
 .about__info {                              /*Проектное задание 2.2 */
     max-width: 550px;
-}
+     }
 
 .about h1 {                                 /*Проектное задание 2.2*/
     font-size: 70px;
     line-height: 76px;
-}
+    animation: h1 2s ease-in-out;                     /*Проектное задание 7.1*/
+     }
 
 .about p {                                 /*Проектное задание 2.2*/
     font-size: 18px;
     line-height: 30px;
     opacity: 0.8;
+    animation: p 2s ease-in-out;         /*Проектное задание 7.1*/
 }
 button {
     font-family: 'Raleway', sans—serif;
@@ -63,16 +65,19 @@ button {
     cursor: pointer;
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
+    animation: button 2s ease-in-out;                 /*Проектное задание 7.1*/
 }
 .about button {                                        /*Проектное задание 2.2*/
     font-size: 18px;                               /*Проектное задание 2.2*/
     border-radius: 20px;                               /*Проектное задание 2.2*/
     padding: 20px 25px;                          /*Проектное задание 2.2*/
     margin-top: 20px;                                     /*Проектное задание 2.2*/
+   
 }
 
 .about__image {                                             /*Проектное задание 2.2*/
     width: 500px;
+    animation: image 2s ease-in-out;                 /*Проектное задание 7.1*/
 }
 
 .about__sun-image {                                      /*Проектное задание 2.2*/
@@ -80,6 +85,7 @@ button {
     height: 100px;                                 /* Проектное задание 2.2*/
     animation: rotation 10s linear infinite;                        /*Проектное задание 5.1*/
     position: absolute;                                         /* Проектное задание 5.2*/
+    animation: sun 2s ease-in-out;                 /*Проектное задание 7.1*/
    } 
 
 .form__container {
@@ -104,8 +110,7 @@ button {
     display: flex;                             /* Проектное задание 4.4*/
     justify-content: center;                  /* Проектное задание 4.4*/
    }
-   
-   
+      
 .form__group {                                     /*Проектное задание 4.5*/
     display: flex;
     flex-direction: column;
@@ -185,7 +190,72 @@ footer__links a {                                           /*Проектное
  }
 
 
- /*Проектное задание 6.1*/
+ 
+
+   
+ @keyframes h1 {              /* Проектное задание 7.1 */
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.7;
+      }
+      100% {
+        opacity: 1;
+        }
+    } 
+      
+    @keyframes p {                 /* Проектное задание 7.1 */
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.7;
+        }
+        100% {
+          opacity: 1;
+          }
+      } 
+
+      @keyframes button {                   /* Проектное задание 7.1 */  
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.7;
+        }
+        100% {
+          opacity: 1;
+          }
+      } 
+
+      @keyframes sun {                 /* Проектное задание 7.1 */ 
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.7;
+        }
+        100% {
+          opacity: 1;
+          }
+      } 
+
+      @keyframes image {             /* Проектное задание 7.1 */
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.7;
+        }
+        100% {
+          opacity: 1;
+          }
+      } 
+
+     
+
+ /*Проектное задание 6.1 для планшета. НЕ УДАЛЯТЬ!!!*/
  /* @media (max-width: 1024px) {                    
     body {
       background-color: white;
@@ -210,7 +280,7 @@ footer__links a {                                           /*Проектное
 
 
 
-/*Проектное задание 6.1*/
+/*Проектное задание 6.1 для мобильного!*/
  @media (max-width: 720px) {                    
     body {
       background-color: white;
