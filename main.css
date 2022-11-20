@@ -8,16 +8,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;    
-    position: sticky;                                  /*Проектное задание 5.3*/
-    background: white;                                  /*Проектное задание 5.3*/
-    top: 0;                                             /*Проектное задание 5.3*/
-    z-index: 1;                                            /*Проектное задание 5.4*/
+    position: sticky;                       /*Проектное задание 5.3. Position: sticky*/
+    background: white;                       /*Проектное задание 5.3. Position: sticky*/
+    top: 0;                                  /*Проектное задание 5.3. Position: sticky*/
+    z-index: 1;                               /*Проектное задание 5.4. CSS-свойство z-index*/
 }
-
 .header__logo {                               /* Раздел "Добавляем стили шапке сайта"*/
     height: 30px;
 } 
-
 a {
     text-decoration: none;
     color: #213053;
@@ -27,173 +25,303 @@ header a {
     font-weight: 600;
     margin-right: 25px;   
   }
-
-.about {                                      /*Проектное задание 2.1*/
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 115px;
-    padding-top: 115px;
-    background: url('img/back.png') no-repeat;       /* Проектное задание 2.2 */
-    background-position: center;                   /* Проектное задание 2.2*/
-    background-size: cover;                       /* Проектное задание 2.2*/
-   }
-
-.about__info {                              /*Проектное задание 2.2 */
-    max-width: 550px;
+.about {                
+    display: flex;                      /*Проектное задание 2.1*/
+    align-items: center;                /*Проектное задание 2.1*/
+    justify-content: space-around;      /*Проектное задание 2.1*/
+    padding-bottom: 115px;              /*Проектное задание 2.1*/
+    padding-top: 115px;                 /*Проектное задание 2.1*/
+    background: url('img/back.png') no-repeat;    /* Проектное задание 2.2_1 */
+    background-position: center;                  /* Проектное задание 2.2_1*/
+    background-size: cover;                       /* Проектное задание 2.2_1*/
+    position: relative;           /*Проектное задание 7.2 Тема "Добавление canvas"*/
+  }
+.about__info {     
+    max-width: 550px;                         /*Проектное задание 2.2_1 */
      }
-
-.about h1 {                                 /*Проектное задание 2.2*/
-    font-size: 70px;
-    line-height: 76px;
-    animation: h1 2s ease-in-out;                     /*Проектное задание 7.1*/
+.about h1 {                                 
+    font-size: 70px;                         /*Проектное задание 2.2 */
+    line-height: 76px;                       /*Проектное задание 2.2 */
+    /* animation: h1 2s ease-in-out;                     Проектное задание 7.1 */
      }
-
-.about p {                                 /*Проектное задание 2.2*/
-    font-size: 18px;
-    line-height: 30px;
-    opacity: 0.8;
-    animation: p 2s ease-in-out;         /*Проектное задание 7.1*/
+.about p {                                 
+    font-size: 18px;                       /*Проектное задание 2.2 */
+    line-height: 30px;                     /*Проектное задание 2.2 */
+    opacity: 0.8;                         /*Проектное задание 2.2 */
+    /* animation: p 2s ease-in-out;                        Проектное задание 7.1 */
 }
+.about__image {                              
+  width: 500px;                            /*Тема "Верстаем первую секцию сайта"*/
+  /* animation: image 2s ease-in-out;                Проектное задание 7.1 */
+}
+.about__sun-image {                           
+  width: 100px;                             /*Тема "Верстаем первую секцию сайта"*/
+  height: 100px;                            /*Тема "Верстаем первую секцию сайта"*/
+  animation: rotation 10s infinite linear;  /*Проектное задание 5.1. CSS-свойство transform*/
+  position: absolute;                       /*Проектное задание 5.2. Position: absolute */
+  /* animation: sun 2s ease-in-out;      Проектное задание 7.1 */
+ } 
 button {
     font-family: 'Raleway', sans—serif;
     font-size: 15px;
     color: #fff;
     background-color: #23a030;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
-    animation: button 2s ease-in-out;                 /*Проектное задание 7.1*/
+    /* animation: button 2s ease-in-out;                 Проектное задание 7.1 */
 }
-.about button {                                        /*Проектное задание 2.2*/
-    font-size: 18px;                               /*Проектное задание 2.2*/
-    border-radius: 20px;                               /*Проектное задание 2.2*/
-    padding: 20px 25px;                          /*Проектное задание 2.2*/
-    margin-top: 20px;                                     /*Проектное задание 2.2*/
-   
+.about button {                                        
+    font-size: 18px;                        /*Проектное задание 2.2*/
+    border-radius: 20px;                    /*Проектное задание 2.2*/
+    padding: 20px 25px;                    /*Проектное задание 2.2*/
+    margin-top: 20px;                      /*Проектное задание 2.2*/
+   }
+ .cards {                              
+  display: grid;                          /*Проектное задание 10.3*/
+  grid-gap: 50px;                         /*Проектное задание 10.3*/
+  grid-template-columns: 1fr 1fr 1fr;     /*Проектное задание 10.3*/
+}
+.card {                              
+  padding: 35px 40px 25px 40px;           /*Проектное задание 10.3*/
+  background: #FFFFFF;                /*Проектное задание 10.3*/
+  border: 1px solid #D9E4E6;          /*Проектное задание 10.3*/
+  border-radius: 5px;                  /*Проектное задание 10.3*/   
+}
+.card p {                                
+  opacity: 0.8;                       /*Проектное задание 10.3*/
+  font-size: 16px;                     /*Проектное задание 10.3*/
+  line-height: 22px;                 /*Проектное задание 10.3*/
+}  
+.card__logo {                          /*Проектное задание 10.3*/
+  font-weight: 700;                    /*Проектное задание 10.3*/
+  font-size: 32px;                       /*Проектное задание 10.3*/
+  background: #eaeff9;                /*Проектное задание 10.3*/
+  border-radius: 50%;                 /*Проектное задание 10.3*/
+  height: 100px;                       /*Проектное задание 10.3*/
+  width: 100px;                       /*Проектное задание 10.3*/
+  display: flex;                       /*Проектное задание 10.3*/
+  justify-content: center;              /*Проектное задание 10.3*/
+  align-items: center;                /*Проектное задание 10.3*/
+}
+.card__logo.yellow {                   
+  color: #ffb406;                    /*Проектное задание 10.3*/
+}
+.card__logo.red {                    
+  color: #ad1714;                    /*Проектное задание 10.3*/
 }
 
-.about__image {                                             /*Проектное задание 2.2*/
-    width: 500px;
-    animation: image 2s ease-in-out;                 /*Проектное задание 7.1*/
+.card__logo.green {                   
+  color: #22a030;                    /*Проектное задание 10.3*/
 }
-
-.about__sun-image {                                      /*Проектное задание 2.2*/
-    width: 100px;                                 /* Проектное задание 2.2*/
-    height: 100px;                                 /* Проектное задание 2.2*/
-    animation: rotation 10s linear infinite;                        /*Проектное задание 5.1*/
-    position: absolute;                                         /* Проектное задание 5.2*/
-    animation: sun 2s ease-in-out;                 /*Проектное задание 7.1*/
-   } 
-
-.form__container {
-    width: 550px;
+.form__container {               
+    width: 550px;            /*Тема "Верстаем форму лендинга"*/
 }
-
  .form h1 {
     font-size: 48px;                            /*Проектное задание 4.3*/
 }
-
-.form p {                                          /*Проектное задание 4.3*/
-    font-size: 18px;
-    opacity: 0.65;
+.form p {                                          
+    font-size: 18px;                              /* Проектное задание 4.3*/
+    opacity: 0.65;                                /* Проектное задание 4.3*/
 }
-
-.form {                                             /* Проектное задание 4.3*/
-    background-color: #1d263a;
-    color: #fff;
-    padding-top: 115px;
-    padding-bottom: 115px;
-    text-align: center;
-    display: flex;                             /* Проектное задание 4.4*/
-    justify-content: center;                  /* Проектное задание 4.4*/
+.form {                                            
+    background-color: #1d263a;                  /* Проектное задание 4.3*/
+    color: #fff;                                /* Проектное задание 4.3*/
+    padding-top: 115px;                           /* Проектное задание 4.3*/
+    padding-bottom: 115px;                        /* Проектное задание 4.3*/
+    text-align: center;                           /* Проектное задание 4.3*/
+    display: flex;                                /* Проектное задание 4.4*/
+    justify-content: center;                      /* Проектное задание 4.4*/
    }
       
-.form__group {                                     /*Проектное задание 4.5*/
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.form__group {                                    
+    display: flex;                               /*Проектное задание 4.5*/
+    flex-direction: column;                      /*Проектное задание 4.5*/
+    text-align: left;                            /*Проектное задание 4.5*/
     }
-.form form {                                   /*Проектное задание 4.6*/
-    display: grid;
-    margin-top: 60px; 
-    grid-gap: 20px;
+.form form {                                   
+    display: grid;                             /*Проектное задание 4.6*/
+    margin-top: 60px;                          /*Проектное задание 4.6*/
+    grid-gap: 20px;                             /*Проектное задание 4.6*/
    }
-.form label {                                     /*Проектное задание 4.7 В решении проектного задания ошибка: margin-bottom: 15px; */
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 15px;
+.form label {                                   
+    font-size: 18px;                         /*Проектное задание 4.7 */
+    font-weight: 600;                        /*Проектное задание 4.7 */
+    margin-bottom: 15px;                     /*Проектное задание 4.7 В решении проектного задания ошибка: margin-bottom: 15px; */
    }
- .form input, .form select {                                    /*Проектное задание 4.8*/
-    font-size: 18px;
-    color: #213053;
-    height: 60px;
-    padding: 0 20px;
-    border-radius: 15px;
-    border: none;
+ .form input, .form select {                
+    font-size: 18px;                       /*Проектное задание 4.8*/
+    color: #213053;                     /*Проектное задание 4.8*/
+    height: 60px;                          /*Проектное задание 4.8*/
+    padding: 0 20px;                      /*Проектное задание 4.8*/
+    border-radius: 15px;                  /*Проектное задание 4.8*/
+    border: none;                        /*Проектное задание 4.8*/
+    outline: none;                       /*Проектное задание 4.8*/
    }
-.form__submit {                                  /*Проектное задание 4.9*/
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 40px; 
+.form__submit {      
+    font-size: 18px;                     /*Проектное задание 4.9*/
+    font-weight: 600;                    /*Проектное задание 4.9*/
+    margin-top: 40px;                    /*Проектное задание 4.9*/
    }
-select {                                       /*Проектное задание 4.9*/
-    appearance: none;
+select {                                       
+    appearance: none;                  /*Проектное задание 4.9_1*/
    }
-input {                                        /*Проектное задание 4.9*/
-    outline: none;
+input {                                        
+    outline: none;                    /*Проектное задание 4.9_1*/
    }
-button:hover {                                                 /*Проектное задание 4.10*/
-    background-color: #f6980c;
-    box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
-    transition: background-color 0.3s ease-in;
+button:hover {                                      
+    background-color: #f6980c;                         /*Проектное задание 4.10*/
+    box-shadow: 0 16px 36px rgba(246 152 12 / 20%);     /*Проектное задание 4.10*/
+    transition: background-color 0.3s ease-in;           /*Проектное задание 4.10*/
    }
-footer {                                                      /*Проектное задание 4.12*/
-    padding: 90px 20px;
-    font-size: 16px;
-    font-weight: 600;
+footer {                                    
+    padding: 90px 20px;                /*Проектное задание 4.12*/
+    font-size: 16px;                  /*Проектное задание 4.12*/
+    font-weight: 600;                  /*Проектное задание 4.12*/
   }
-.footer__container {                                    /*Проектное задание 4.12*/
-    display: flex;
-    justify-content: center;
+.footer__container {                                   
+    display: flex;                  /*Проектное задание 4.12*/
+    justify-content: center;        /*Проектное задание 4.12*/
   }
-.footer__copy {                                       /*Проектное задание 4.12 В решении проектного задания ошибка: .footer__copy {*/
-    margin-top: 40px;
-    text-align: center;
-    opacity: 0.5;
+.footer__copy {                    /*Проектное задание 4.12 В решении проектного задания ошибка: .footer__copy {*/                                      
+    margin-top: 40px;              /*Проектное задание 4.12 */
+    text-align: center;            /*Проектное задание 4.12*/
+    opacity: 0.5;                 /*Проектное задание 4.12*/
   }
-.footer__group {                                              /*Проектное задание 4.14*/
-   margin-right: 80px; 
+.footer__group {                                
+   margin-right: 80px;               /*Проектное задание 4.14*/
 }
-footer h3 {                                                          /*Проектное задание 4.14*/
-    font-size: 16px;
-    opacity: 0.7;
-    margin-bottom: 30px;
+footer h3 {                                                         
+    font-size: 16px;              /*Проектное задание 4.14*/
+    opacity: 0.7;                /*Проектное задание 4.14*/
+    margin-bottom: 30px;         /*Проектное задание 4.14*/
   }
-.footer__links {                                      /*Проектное задание 4.14*/
-    display: flex;
-    flex-direction: column;
+  .footer__links {                                      
+    display: flex;                      /*Проектное задание 4.14*/
+    flex-direction: column;              /*Проектное задание 4.14*/
   }
-footer__links a {                                           /*Проектное задание 4.14*/
-    margin-bottom: 15px;
+  .footer__links a {                                 
+    margin-bottom: 15px;              /*Проектное задание 4.14*/
   }
-
- @keyframes rotation {                              /*Проектное задание 5.1*/
+  .features {                   
+    padding: 115px 60px;            /* Проектное задание 10.1 JavaScript-I*/
+    background-color: #fff;            /* Проектное задание 10.1*/
+   }
+  .features__border {                
+    width: 100%;                           /*Проектное задание 10.4*/
+    border: 1px solid #E6EAF4;          /*Проектное задание 10.4*/
+    margin-top: 50px;                    /*Проектное задание 10.4*/
+    margin-bottom: 50px;                  /*Проектное задание 10.4*/
+  }
+  .features__feedback {               
+    display: flex;                      /*Проектное задание 10.6*/
+  }
+  .features__feedback-left {             
+    margin-right: 10px;                 /*Проектное задание 10.6*/
+  }
+  .features__feedback-left h2 {             
+    font-size: 48px;                    /*Проектное задание 10.6*/
+  }
+  .features__feedback-left p {             
+    font-size: 18px;                 /*Проектное задание 10.6*/
+    opacity: 0.7;                     /*Проектное задание 10.6*/
+    line-height: 26px;               /*Проектное задание 10.6*/
+  }
+  .features__feedback-right {              
+    display: flex;                 /*Проектное задание 10.6*/
+    align-items: center;            /*Проектное задание 10.6*/
+  }
+  .features__box {                
+    border-radius: 25px;           /*Проектное задание 10.6*/
+    padding: 30px 40px 25px 40px;   /*Проектное задание 10.6*/
+    color: white;                 /*Проектное задание 10.6*/
+  }
+  .features__box h3 {         
+    font-size: 48px;                /*Проектное задание 10.6*/
+    margin-top: 0;                 /*Проектное задание 10.6*/
+    margin-bottom: 20px;            /*Проектное задание 10.6*/
+  }
+  .features__savings-box {
+    background-color: #dc5e26;    /*Проектное задание 10.6*/
+    box-shadow: 0 6px 0 rgb(221 95 38 / 20%); /*Проектное задание 10.6*/
+    margin-right: 30px;             /*Проектное задание 10.6*/
+  }
+  .features__rate-box {          
+    background-color: #1D263A;            /*Проектное задание 10.6*/
+    box-shadow: 0 6px 0 rgb(29 38 58 / 20%);   /*Проектное задание 10.6*/
+  }
+  .stars {                   
+    color: #ff7039;               /*Проектное задание 10.6*/
+  }
+  .promo {         
+    display: flex;                  /*Проектное задание 10.7*/
+  }
+  .promo__image {                  
+    background-image: url(img/promo.jpg);  /*Проектное задание 10.7*/
+    width: 50%;                   /*Проектное задание 10.7*/
+    flex-shrink: 0;               /*Проектное задание 10.7*/
+    background-size: cover;        /*Проектное задание 10.7*/
+    background-position: center;  /*Проектное задание 10.7*/
+  }
+  .promo__right {               
+    background: #dd5f26;            /*Проектное задание 10.7*/
+    padding: 160px 60px;             /*Проектное задание 10.7*/
+  }
+  .promo__text {      
+    background-color: white;    /*Проектное задание 10.9*/
+    padding: 30px 40px;          /*Проектное задание 10.9*/
+    border-radius: 25px;         /*Проектное задание 10.9*/
+    font-size: 20px;             /*Проектное задание 10.9*/
+    font-weight: 500;            /*Проектное задание 10.9*/
+    line-height: 26px;           /*Проектное задание 10.9*/
+  }
+  .promo__text p::before {              
+    content: '';                     /*Проектное задание 10.9*/
+    display: inline-block;           /*Проектное задание 10.9*/
+    width: 10px;                    /*Проектное задание 10.9*/
+    height: 10px;                    /*Проектное задание 10.9*/
+    border-radius: 50%;              /*Проектное задание 10.9*/
+    background-color: #ec6b29;     /*Проектное задание 10.9*/
+    margin-right: 10px;             /*Проектное задание 10.9*/
+  }
+  .promo__text p {               
+    opacity: 0.8;                  /*Проектное задание 10.9*/
+  }
+  .promo__text button {               
+    background-color: #107b1c;          /*Проектное задание 10.9*/
+    margin-top: 20px;                    /*Проектное задание 10.9*/
+    font-weight: 600;                    /*Проектное задание 10.9*/
+    font-size: 18px;                    /*Проектное задание 10.9*/
+    box-shadow: 0 16px 36px rgb(16 122 28 / 30%);   /*Проектное задание 10.9*/
+    padding: 15px 30px;                /*Проектное задание 10.9*/
+  }
+  .promo__button-wrap {               
+    display: flex;                    /*Проектное задание 10.9*/
+    justify-content: center;          /*Проектное задание 10.9*/
+  }
+  .promo__text button i {               
+    font-size: 15px;                  /*Проектное задание 10.9*/
+    margin-left: 5px;                 /*Проектное задание 10.9*/
+  }
+  .orb-canvas {                      
+    position: absolute;           /*Проектное задание 7.2 Тема "Добавление canvas" */
+    top: 0;                       /*Проектное задание 7.2 Тема "Добавление canvas" */
+    right: 0;                     /*Проектное задание 7.2 Тема "Добавление canvas" */
+    height: 100%;                /*Проектное задание 7.2 Тема "Добавление canvas" */
+  }
+ 
+ @keyframes rotation {                           
         0% {
-          transform: rotate(0deg);
+          transform: rotate(0deg);             /*Проектное задание 5.1*/
         }
         100% {
-          transform: rotate(360deg);
+          transform: rotate(360deg);           /*Проектное задание 5.1*/
 }
  }
-
-
- 
-
    
- @keyframes h1 {              /* Проектное задание 7.1 */
+ /* @keyframes h1 {              Проектное задание 7.1 */
       0% {
         opacity: 0;
       }
@@ -203,9 +331,9 @@ footer__links a {                                           /*Проектное
       100% {
         opacity: 1;
         }
-    } 
+    
       
-    @keyframes p {                 /* Проектное задание 7.1 */
+    /* @keyframes p {                 Проектное задание 7.1 */
         0% {
           opacity: 0;
         }
@@ -215,9 +343,9 @@ footer__links a {                                           /*Проектное
         100% {
           opacity: 1;
           }
-      } 
+      
 
-      @keyframes button {                   /* Проектное задание 7.1 */  
+      /* @keyframes button {                   /* Проектное задание 7.1 */
         0% {
           opacity: 0;
         }
@@ -227,9 +355,9 @@ footer__links a {                                           /*Проектное
         100% {
           opacity: 1;
           }
-      } 
+      
 
-      @keyframes sun {                 /* Проектное задание 7.1 */ 
+      /* @keyframes sun {                 Проектное задание 7.1  */
         0% {
           opacity: 0;
         }
@@ -239,9 +367,9 @@ footer__links a {                                           /*Проектное
         100% {
           opacity: 1;
           }
-      } 
+      
 
-      @keyframes image {             /* Проектное задание 7.1 */
+      /* @keyframes image {             Проектное задание 7.1 */
         0% {
           opacity: 0;
         }
@@ -251,50 +379,21 @@ footer__links a {                                           /*Проектное
         100% {
           opacity: 1;
           }
-      } 
+      
 
      
 
  /*Проектное задание 6.1 для планшета. НЕ УДАЛЯТЬ!!!*/
- /* @media (max-width: 1024px) {                    
-    body {
+ @media (max-width: 1024px) {                    
+    /* body {
       background-color: white;
-    }
-    .about {                                                                       
-        padding: 50px 20px;         
-    }
-    .form {                                              
-        padding: 50px 20px; 
-    }
-    .about__image {                                            
-        width: 280px;
-    }
-    .about__sun-image {                                                     
-        width: 75px;                                                     
-        height: 75px;
-    }
-    .about h1 {                                 
-        font-size: 36px;
-        line-height: 40px;
     } */
-
-
-
-/*Проектное задание 6.1 для мобильного!*/
- @media (max-width: 720px) {                    
-    body {
-      background-color: white;
-    }
-    .header__logo {                             
-        height: 20px;                                                 
-    }
     .about {                                                                       
-        padding: 50px 10px;         
+        padding: 115px 20px;         
     }
-    .about h1 {                                 
-        font-size: 36px;
-        line-height: 40px;
-    }
+    /* .form {                                              
+        padding: 50px 20px; 
+    } */
     .about__image {                                            
         width: 280px;
     }
@@ -302,12 +401,89 @@ footer__links a {                                           /*Проектное
         width: 75px;                                                     
         height: 75px;
     }
-    .form h1 {
-        font-size: 36px;                            
+    .about h1 {                                 
+        font-size: 36px;
         line-height: 40px;
-    } 
-    .form {                                              
-        padding: 50px 10px; 
     }
- }
+  }
+
+
+
+/*Проектное задание 6.1 для мобильного*/
+ @media (max-width: 720px) {                                 
+    header {
+    padding: 10px;          /* Проектное задание 6.1*/
+    }
+    .header__logo {                            
+        height: 20px;            /* Проектное задание 6.1*/                                               
+    }
+    header a {                      
+      margin-right: 10px;          /* Проектное задание 6.1*/
+    }
+    .about {                           
+      flex-direction: column-reverse;    /* Проектное задание 6.1*/
+      padding: 50px 10px;               /* Проектное задание 6.1*/
+    }
+    /* .about {                                   УДАЛИТЬ                                      
+        padding: 50px 10px;         
+    } */
+    .about h1 {                                 
+        font-size: 36px;                /* Проектное задание 6.1*/ 
+        line-height: 40px;                /* Проектное задание 6.1*/ 
+    }
+    .about__image {                                            
+        width: 280px;                /* Проектное задание 6.1*/ 
+    }
+    .about__sun-image {                                                    
+        width: 75px;                     /* Проектное задание 6.1*/                                                 
+        height: 75px;                /* Проектное задание 6.1*/ 
+    }  
+    .form {                                                             
+      padding: 50px 10px;                 /* Проектное задание 6.1*/ 
+    }
+    .form h1 {                             
+        font-size: 36px;                    /* Проектное задание 6.1*/         
+        line-height: 40px;                 
+    } 
+    footer {                    
+      padding: 50px 10px;                   /* Проектное задание 6.1*/
+    }
+    .footer__container {
+      flex-direction: column;                   /* Проектное задание 6.1*/
+    }
+    .features {                       
+      padding: 50px 10px;               /* Проектное задание 10.1*/
+    }
+    .cards {                                                
+      grid-template-columns: auto;      /*Проектное задание 10.3*/
+    }
+    .features__feedback {                  
+      flex-direction: column;        /*Проектное задание 10.6*/
+    }
+    .features__feedback-left {       
+      margin-right: 0;               /*Проектное задание 10.6*/
+    }
+    .features__feedback-left h2, .features__box h3 {   
+      font-size: 36px;              /*Проектное задание 10.6*/
+    }
+    .features__feedback-right {           
+      flex-direction: column;        /*Проектное задание 10.6*/
+      align-items: initial;           /*Проектное задание 10.6*/
+    }
+    .features__savings-box {                  
+      margin-right: 0;              /*Проектное задание 10.6*/
+      margin-bottom: 30px;          /*Проектное задание 10.6*/
+    }
+    .promo {                             
+      flex-direction: column-reverse;   /*Проектное задание 10.7*/
+    }
+    .promo__right {                            
+      padding: 50px 10px;             /*Проектное задание 10.7*/
+    }
+    .promo__image {                           
+      width: 100%;                /*Проектное задание 10.7*/
+      height: 500px;             /*Проектное задание 10.7*/
+    }
+  }
+ 
  
