@@ -36,6 +36,12 @@ header a {
     background-size: cover;                       /* Проектное задание 2.2_1*/
     position: relative;           /*Проектное задание 7.2 Тема "Добавление canvas"*/
   }
+  .orb-canvas {                      
+    position: absolute;           /*Проектное задание 7.2 Тема "Добавление canvas" */
+    top: 0;                       /*Проектное задание 7.2 Тема "Добавление canvas" */
+    right: 0;                     /*Проектное задание 7.2 Тема "Добавление canvas" */
+    height: 100%;                /*Проектное задание 7.2 Тема "Добавление canvas" */
+  }
 .about__info {     
     max-width: 550px;                         /*Проектное задание 2.2_1 */
      }
@@ -305,12 +311,7 @@ footer h3 {
     font-size: 15px;                  /*Проектное задание 10.9*/
     margin-left: 5px;                 /*Проектное задание 10.9*/
   }
-  .orb-canvas {                      
-    position: absolute;           /*Проектное задание 7.2 Тема "Добавление canvas" */
-    top: 0;                       /*Проектное задание 7.2 Тема "Добавление canvas" */
-    right: 0;                     /*Проектное задание 7.2 Тема "Добавление canvas" */
-    height: 100%;                /*Проектное задание 7.2 Тема "Добавление canvas" */
-  }
+  
  
  @keyframes rotation {                           
         0% {
@@ -321,7 +322,7 @@ footer h3 {
 }
  }
    
- /* @keyframes h1 {              Проектное задание 7.1 */
+ @keyframes h1 {              /* Проектное задание 7.1  */
       0% {
         opacity: 0;
       }
@@ -331,9 +332,9 @@ footer h3 {
       100% {
         opacity: 1;
         }
-    
+      }
       
-    /* @keyframes p {                 Проектное задание 7.1 */
+    @keyframes p {                 /*Проектное задание 7.1 */
         0% {
           opacity: 0;
         }
@@ -342,10 +343,11 @@ footer h3 {
         }
         100% {
           opacity: 1;
-          }
+     }
+    }
       
 
-      /* @keyframes button {                   /* Проектное задание 7.1 */
+      @keyframes button {                   /* Проектное задание 7.1*/
         0% {
           opacity: 0;
         }
@@ -355,9 +357,9 @@ footer h3 {
         100% {
           opacity: 1;
           }
-      
+        }
 
-      /* @keyframes sun {                 Проектное задание 7.1  */
+       @keyframes sun {                /* Проектное задание 7.1  */
         0% {
           opacity: 0;
         }
@@ -367,9 +369,9 @@ footer h3 {
         100% {
           opacity: 1;
           }
-      
+        }
 
-      /* @keyframes image {             Проектное задание 7.1 */
+      @keyframes image {            /* Проектное задание 7.1  */
         0% {
           opacity: 0;
         }
@@ -379,21 +381,21 @@ footer h3 {
         100% {
           opacity: 1;
           }
-      
+        }
 
      
 
  /*Проектное задание 6.1 для планшета. НЕ УДАЛЯТЬ!!!*/
  @media (max-width: 1024px) {                    
-    /* body {
+    body {
       background-color: white;
-    } */
+    }
     .about {                                                                       
         padding: 115px 20px;         
     }
-    /* .form {                                              
+    .form {                                              
         padding: 50px 20px; 
-    } */
+    }
     .about__image {                                            
         width: 280px;
     }

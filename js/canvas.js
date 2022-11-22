@@ -88,6 +88,7 @@ class CanvasBackground { /*Проектное задание 7.6_6 Canvas. Мы 
      }
    }
 }
+
 const canvas = new CanvasBackground("orb-canvas");
 canvas.start();                                      
        
