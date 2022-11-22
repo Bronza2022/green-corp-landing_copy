@@ -4,12 +4,12 @@
     <title>Солнечные батареи GreenCorp</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="fontawesome/all.min.css">    <!--Проектное задание 7.1 Вставка библиотеки Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">    <!--Проектное задание 7.1 Вставка библиотеки Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!--Проектное задание 7.1. Вставка библиотеки Animate-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Проектное задание 6.1-->
 </head>
 <body>
-    <header> <!-- шапка сайта и одновременно Flex-контейнер, для которого применяем  стиль display: flex-->
+    <header> <!-- шапка сайта и одновременно Flex-контейнер, для которого применяем стиль display: flex-->
         <img class="header__logo" src="img/logo.svg">
         <div class="header__controls">                   
             <a href="#contacts">Контакты</a>
@@ -17,123 +17,159 @@
         </div>
     </header>
     <section class="about">
-        <div class="about__info animate__animated animate__fadeInLeftBig">  <!--Проектное задание 7.1-->
+        <canvas class="orb-canvas" id="orb-canvas"></canvas>  <!-- Проектное задание 7.1 Тема "Добавление canvas"-->
+        <div class="about__info animate__animated animate__fadeInLeft animate__slow">  <!--Проектное задание 7.1. Вставка библиотеки Fontawesome-->
            <h1>Солнечные панели GreenRobotic</h1>
            <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-           <button class="btn">Узнать подробнее<i class="fa-solid fa-chevron-right"></i></button>   <!--Проектное задание 7.1 https://html5css.ru/howto/howto_css_icon_buttons.php-->
+          <!-- <button class="btn">Узнать подробнее<i class="fa-solid fa-chevron-right"></i></button>  Проектное задание 7.1 https://html5css.ru/howto/howto_css_icon_buttons.php-->
+           <button>Узнать подробнее <i class="fas fa-angle-right"></i></button>
          </div>
-        <div class="about__images animate__animated animate__fadeInRightBig">   <!--Проектное задание 7.1-->
-            
+        <div class="about__images animate__animated animate__fadeInRight animate__slow">   <!--Проектное задание 7.1. Вставка библиотеки Fontawesome-->
           <img class="about__sun-image" src="img/sun.png"> 
-       
           <img class="about__image" src="img/solar-panel.png">
         </div>
     </section>
-    <section class="form">
-        <div class="form__container">
-            <h1>Оставьте свои контакты</h1>                            <!--Проектное задание 4.1 (далее 4.1)-->
-            <p>Поможем подобрать модель.<br>                                                     <!--4.1 -->
-                Выбрать удобный вариант доставки и установки.<br>                                <!--4.1 -->
-                Гарантия возврата денег.</p>                                                       <!--4.1 -->
-                <form>                                                                             <!--4.1 -->
-                    <div class="form__group">                                                      <!--4.1 -->
-                        <label for="name">Ваше имя</label>                                          <!--4.1 -->
-                        <input type="text" placeholder="Введите имя" id="name">                     <!--4.2 -->
+
+
+    <section class="features" id="features">           <!--Проектное задание 10.1_1-->          
+        <div class="cards">                            <!--Проектное задание 10.1_1--> 
+            <div class="card">                          <!--Проектное задание 10.2.--> 
+                <div class="card__logo yellow">          
+                   <i class="fa-solid fa-solar-panel"></i>
+                </div>
+                <h3>Уменьшите счета за электричество</h3>                             
+                <p>Используйте чистую солнечную энергию для питания своего дома: уменьшите зависимость от электросети и счета за электричество.</p>
+            </div>
+            <div class="card">                            <!--Проектное задание 10.2.-->
+                <div class="card__logo red">
+                    24/7
+                </div>    
+                <h3>Мониторинг электроэнергии</h3>                             
+                <p>Управляйте своей системой солнечных панелей из любой точки мира с помощью специального мобильного приложения.</p>
+            </div>
+            <div class="card">                             <!--Проектное задание 10.2.-->
+                <div class="card__logo green">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3>Максимальная эффективность</h3>                             
+                <p>Солнечные панели GreenRobotic обеспечивают максимальное производство энергии круглый год, даже на крышах со сложными углами.</p>
+            </div>
+        </div> 
+    <div class="features__border"></div>            <!--Проектное задание 10.4.-->
+    <div class="features__feedback">               <!--Проектное задание 10.4_1-->
+        <div class="features__feedback">          <!--Проектное задание 10.4_1-->
+            <div class="features__feedback-left"> <!--Проектное задание 10.4_1-->
+              <h2>                                 <!--Проектное задание 10.5.-->
+                 Нам доверяет
+                <br>                               <!--Проектное задание 10.5.-->
+                <div class="features__clients-count">5000+</div> счастливых клиентов <!--Раздел "Управление веб-страницей с помощью JavaScript". Тема "Работа над проектом"-->
+              </h2>
+              <p>                                  <!--Проектное задание 10.5.-->
+                 Мы помогли тысячам людей перейти на зеленую энергию.
+                <br>                                 <!--Проектное задание 10.5.-->
+                 После заказа мы позаботимся обо всем: доставка панелей, проект, установка, помощь в использовании
+              </p>
+            </div>
+            <div class="features__feedback-right">   <!--Проектное задание 10.4_1-->
+              <div class="features__box features__savings-box">  <!--Проектное задание 10.5.-->
+                <h3>30 млн ₽</h3>                    <!--Проектное задание 10.5.-->
+                <p>Помогаем экономить нашим клиентам ежемесячно</p>
+              </div>
+              <div class="features__box features__rate-box"> <!--Проектное задание 10.5.-->
+                <h3>4.7</h3>
+                <p class="stars">                   <!--Проектное задание 10.5.-->
+                  <i class="fas fa-star"></i>       <!--Проектное задание 10.5.-->
+                  <i class="fas fa-star"></i>       <!--Проектное задание 10.5.-->
+                  <i class="fas fa-star"></i>       <!--Проектное задание 10.5.-->
+                  <i class="fas fa-star"></i>       <!--Проектное задание 10.5.-->
+                  <i class="fas fa-star"></i>       <!--Проектное задание 10.5.-->
+                </p>
+                <p>
+                  Средняя оценка наших клиентов
+                </p>
+              </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="promo">                  <!--Проектное задание 10.6_1-->
+      <div class="promo__image"></div>       <!--Проектное задание 10.6_1-->
+      <div class="promo__right">             <!--Проектное задание 10.6_1-->
+      <div class="promo__text">              <!--Проектное задание 10.8.-->
+      <h2>Зарядите свой дом</h2>              <!--Проектное задание 10.8.-->
+      <p>Солнечные панели сертифицированы мировыми экспертами: система безопасна и надежна.</p> <!--Проектное задание 10.8.-->
+      <p>Следите за накоплением энергии вашего дома в режиме реального времени и настраивайте процент расхода и накопления энергии.</p> <!--Проектное задание 10.8.-->
+    <div class="promo__button-wrap">              <!--Проектное задание 10.8.-->
+        <button type="button">Заказать <i class="fas fa-chevron-right"></i></button>  <!--Проектное задание 10.8.-->
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="form">                       <!--Тема "Верстаем форму лендинга"-->
+        <div class="form__container">            <!--Тема "Верстаем форму лендинга"-->
+            <h1>Оставьте свои контакты</h1>                 <!--Проектное задание 4.1-->
+            <p>Поможем подобрать модель.<br>                <!--Проектное задание 4.1-->                                                    
+                Выбрать удобный вариант доставки и установки.<br>    <!--Проектное задание 4.1-->                                
+                Гарантия возврата денег.</p>                <!--Проектное задание 4.1-->                                                      
+                <form>                                      <!--Проектное задание 4.1-->                                                                <!--4.1 -->
+                    <div class="form__group">               <!--Проектное задание 4.1_1-->  
+                        <label for="name">Ваше имя</label>  <!--Проектное задание 4.1_1-->
+                        <input type="text" placeholder="Введите имя" id="name">  <!--Проектное задание 4.1_1-->
                     </div>
-                    <div class="form__group">                                                        <!--4.1 -->
-                        <label for="email">Электронный адрес</label>                                   <!--4.1 -->
-                        <input type="email" placeholder="***@yandex.ru" id="email">                       <!--4.2 -->
+                    <div class="form__group">                                         <!--Проектное задание 4.1_1-->
+                        <label for="email">Электронный адрес</label>                  <!--Проектное задание 4.1_1-->
+                        <input type="email" placeholder="***@yandex.ru" id="email">   <!--Проектное задание 4.1_1-->
                     </div>
-                    <div class="form__group">
-                        <label for="phon">Номер телефона</label>                                         <!--4.1 -->
-                        <input type="phon" placeholder="7(999) 999-99-99" id="phone">                <!--4.2 -->
+                    <div class="form__group">                                          <!--Проектное задание 4.1_1-->
+                        <label for="phon">Номер телефона</label>                       <!--Проектное задание 4.1_1-->
+                        <input type="phon" placeholder="7(999) 999-99-99" id="phone">  <!--Проектное задание 4.1_1-->
                     </div>
-                    <div class="form__group">                                                         <!--4.1 -->
-                        <label for="budget">Примерный бюджет></label>                                     <!--4.1 -->
-                        <select id="budget">
+                    <div class="form__group">                                         <!--Проектное задание 4.1_1-->
+                        <label for="budget">Примерный бюджет></label>                 <!--Проектное задание 4.1_1-->
+                        <select id="budget">                                          <!--Проектное задание 4.2--> 
                             <option>
-                                Выберите вариант
-                            </option>                                <!--4.2 -->
-                            <option value="10-30">10 000₽ – 30 000₽</option>                           <!--4.2 -->
-                            <option value="30-60">30 000₽ – 60 000₽</option>                            <!--4.2 -->
-                            <option value="60-100">60 000₽ – 100 000₽</option>                   <!--4.2 -->
-                            <option value="100">100 000₽</option>
+                                Выберите вариант                                      <!--Проектное задание 4.2--> 
+                            </option>                                                 <!--Проектное задание 4.2--> 
+                            <option value="10-30">10 000₽ – 30 000₽</option>          <!--Проектное задание 4.2--> 
+                            <option value="30-60">30 000₽ – 60 000₽</option>          <!--Проектное задание 4.2--> 
+                            <option value="60-100">60 000₽ – 100 000₽</option>        <!--Проектное задание 4.2--> 
+                            <option value="100">100 000₽</option>                     <!--Проектное задание 4.2--> 
                         </select>
                     </div>
-                        <button class="form__submit" type="submit">Отправить заявку</button>            <!--4.2 -->
+                        <button class="form__submit" type="submit">Отправить заявку</button>  <!--Проектное задание 4.2--> 
                     </form>
             </div>
         </section>
-        <footer>                                                                 <!--4.11 -->
-            <div class="footer__container">
-                <div class="footer__group">                               <!--4.12-4.13 -->
-                <h3>Позвонить нам:</h3>
-                <div class="footer__links">
-                    <a href="#">+7 (495) 999-99-99</a>
+        <footer>                                                <!--Проектное задание 4.11--> 
+            <div class="footer__container">                     <!--Проектное задание 4.11--> 
+                <div class="footer__group">                     <!--Проектное задание 4.12-4.13--> 
+                <h3>Позвонить нам:</h3>                          <!--Проектное задание 4.12-4.13--> 
+                <div class="footer__links">                      <!--Проектное задание 4.12-4.13--> 
+                    <a href="#">+7 (495) 999-99-99</a>          <!--Проектное задание 4.12-4.13--> 
                 </div>
                 </div>
-               <div class="footer__group">                                   <!--4.12-4.13 -->
-                <h3>Решения для дома:</h3>
-                <div class="footer__links">
-                <a href="#">Солнечные панели GreenRobotic</a>
-                <a href="#">Системы солнечных панелей GreenStation</a>
+               <div class="footer__group">                       <!--Проектное задание 4.12-4.13--> 
+                <h3>Решения для дома:</h3>                      <!--Проектное задание 4.12-4.13--> 
+                <div class="footer__links">                      <!--Проектное задание 4.12-4.13--> 
+                <a href="#">Солнечные панели GreenRobotic</a>    <!--Проектное задание 4.12-4.13--> 
+                <a href="#">Системы солнечных панелей GreenStation</a>  <!--Проектное задание 4.12-4.13--> 
             </div>
             </div>
-            <div class="footer__group">                                    <!--4.12-4.13 -->      
-                <h3>Компания</h3>
-                <div class="footer__links">
-                <a href="#">Контакты</a>
-                <a href="#">Вакансии</a>
-                <a href="#">СМИ</a>
+            <div class="footer__group">                     <!--Проектное задание 4.12-4.13-->                                           
+                <h3>Компания</h3>                           <!--Проектное задание 4.12-4.13--> 
+                <div class="footer__links">                <!--Проектное задание 4.12-4.13--> 
+                <a href="#">Контакты</a>                    <!--Проектное задание 4.12_14.12-4.13--> 
+                <a href="#">Вакансии</a>                    <!--Проектное задание 4.12-4.13--> 
+                <a href="#">СМИ</a>                         <!--Проектное задание 4.12-4.13--> 
                 </div>
             </div>
             </div>
-            <div class="footer__copy">GreenCorp © 2021</div>              <!--4.11 В задании ошибка: <div class="footer__copyright">-->
+            <div class="footer__copy">GreenCorp © 2021</div>   <!--Проектное задание 4.11. В задании ошибка: <div class="footer__copyright">-->
             </footer>
             <script src="fontawesome/all.min.js"></script>   <!--Проектное задание 7.1)-->
-            
+        <script src="js/canvas.js"></script>    <!-- Проектное задание 7.3 Canvas-->
+        <script src="js/animations.js"></script> <!--Раздел "Управление веб-страницей с помощью JavaScript". Тема "Работа над проектом"-->
     </body>
     </html> 
-  
-
-
      
-   
-
-<!-- УДАЛИТЬ ВСЕ НИЖЕ -->
-<!-- К проекту Animate -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1 class="animate__animated animate__swing">An animated element</h1>  
-</body>
-</html> -->
-
-   
-
-    <!-- К проекту Fontawesome -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome/all.min.css">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
-</head>
-<body>
-  <div class="icon">
-   <i class="fa-light fa-chevron-right"></i>
-</div>     
-  <script src="fontawesome/all.min.js"></script>
-</body>
-</html> -->
